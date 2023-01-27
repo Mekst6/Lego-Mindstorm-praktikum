@@ -148,3 +148,5 @@ cd (Ordner wechsel)
 
 cd .. (zurück)
 
+ls
+

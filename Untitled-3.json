@@ -1,0 +1,193 @@
+{
+    "ok": true,
+    "result": [
+        {
+            "update_id": 709831071,
+            "message": {
+                "message_id": 2,
+                "from": {
+                    "id": 5119839971,
+                    "is_bot": false,
+                    "first_name": "Alex",
+                    "language_code": "de"
+                },
+                "chat": {
+                    "id": 5119839971,
+                    "first_name": "Alex",
+                    "type": "private"
+                },
+                "date": 1674556110,
+                "text": "/start",
+                "entities": [
+                    {
+                        "offset": 0,
+                        "length": 6,
+                        "type": "bot_command"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 709831072,
+            "message": {
+                "message_id": 3,
+                "from": {
+                    "id": 5119839971,
+                    "is_bot": false,
+                    "first_name": "Alex",
+                    "language_code": "de"
+                },
+                "chat": {
+                    "id": 5119839971,
+                    "first_name": "Alex",
+                    "type": "private"
+                },
+                "date": 1674556117,
+                "text": "Hallo"
+            }
+        },
+        {
+            "update_id": 709831073,
+            "message": {
+                "message_id": 4,
+                "from": {
+                    "id": 5119839971,
+                    "is_bot": false,
+                    "first_name": "Maximilian",
+                    "language_code": "de"
+                },
+                "chat": {
+                    "id": 5119839971,
+                    "first_name": "Maximilian",
+                    "type": "private"
+                },
+                "date": 1674556212,
+                "text": "Hallo"
+            }
+        },
+        {
+            "update_id": 709831074,
+            "message": {
+                "message_id": 5,
+                "from": {
+                    "id": 5119839971,
+                    "is_bot": false,
+                    "first_name": "Maximilian",
+                    "language_code": "de"
+                },
+                "chat": {
+                    "id": 5119839971,
+                    "first_name": "Maximilian",
+                    "type": "private"
+                },
+                "date": 1674556477,
+                "text": "1"
+            }
+        },
+        {
+            "update_id": 709831075,
+            "message": {
+                "message_id": 6,
+                "from": {
+                    "id": 5119839971,
+                    "is_bot": false,
+                    "first_name": "Maximilian",
+                    "language_code": "de"
+                },
+                "chat": {
+                    "id": -808126898,
+                    "title": "Test",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1674560581,
+                "text": "/my_id @Ev3telegramtestbot",
+                "entities": [
+                    {
+                        "offset": 0,
+                        "length": 6,
+                        "type": "bot_command"
+                    },
+                    {
+                        "offset": 7,
+                        "length": 19,
+                        "type": "mention"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 709831076,
+            "message": {
+                "message_id": 16,
+                "from": {
+                    "id": 5119839971,
+                    "is_bot": false,
+                    "first_name": "Maximilian",
+                    "language_code": "de"
+                },
+                "chat": {
+                    "id": 5119839971,
+                    "first_name": "Maximilian",
+                    "type": "private"
+                },
+                "date": 1674572097,
+                "text": "Ich sehe die Nachrichten"
+            }
+        },
+        {
+            "update_id": 709831077,
+            "message": {
+                "message_id": 17,
+                "from": {
+                    "id": 5119839971,
+                    "is_bot": false,
+                    "first_name": "Maximilian",
+                    "language_code": "de"
+                },
+                "chat": {
+                    "id": -808126898,
+                    "title": "Test",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1674634849,
+                "text": "/hello",
+                "entities": [
+                    {
+                        "offset": 0,
+                        "length": 6,
+                        "type": "bot_command"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 709831078,
+            "message": {
+                "message_id": 18,
+                "from": {
+                    "id": 5119839971,
+                    "is_bot": false,
+                    "first_name": "Maximilian",
+                    "language_code": "de"
+                },
+                "chat": {
+                    "id": -808126898,
+                    "title": "Test",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1674634955,
+                "text": "/hello",
+                "entities": [
+                    {
+                        "offset": 0,
+                        "length": 6,
+                        "type": "bot_command"
+                    }
+                ]
+            }
+        }
+    ]
+}

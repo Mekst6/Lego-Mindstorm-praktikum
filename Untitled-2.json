@@ -1,0 +1,40 @@
+[
+    {'update_id': 709831071, 'message': {'message_id': 2, 'from': {'id': 5119839971, 'is_bot': False, 'language_code': 'de', 'first_name': 'Alex'
+            }, 'text': '/start', 'date': 1674556110, 'entities': [
+                {'offset': 0, 'length': 6, 'type': 'bot_command'
+                }
+            ], 'chat': {'id': 5119839971, 'type': 'private', 'first_name': 'Alex'
+            }
+        }
+    },
+    {'update_id': 709831072, 'message': {'message_id': 3, 'from': {'id': 5119839971, 'is_bot': False, 'language_code': 'de', 'first_name': 'Alex'
+            }, 'text': 'Hallo', 'date': 1674556117, 'chat': {'id': 5119839971, 'type': 'private', 'first_name': 'Alex'
+            }
+        }
+    },
+    {'update_id': 709831073, 'message': {'message_id': 4, 'from': {'id': 5119839971, 'is_bot': False, 'language_code': 'de', 'first_name': 'Maximilian'
+            }, 'text': 'Hallo', 'date': 1674556212, 'chat': {'id': 5119839971, 'type': 'private', 'first_name': 'Maximilian'
+            }
+        }
+    },
+    {'update_id': 709831074, 'message': {'message_id': 5, 'from': {'id': 5119839971, 'is_bot': False, 'language_code': 'de', 'first_name': 'Maximilian'
+            }, 'text': '1', 'date': 1674556477, 'chat': {'id': 5119839971, 'type': 'private', 'first_name': 'Maximilian'
+            }
+        }
+    },
+    {'update_id': 709831075, 'message': {'message_id': 6, 'from': {'id': 5119839971, 'is_bot': False, 'language_code': 'de', 'first_name': 'Maximilian'
+            }, 'text': '/my_id @Ev3telegramtestbot', 'date': 1674560581, 'entities': [
+                {'offset': 0, 'length': 6, 'type': 'bot_command'
+                },
+                {'offset': 7, 'length': 19, 'type': 'mention'
+                }
+            ], 'chat': {'id': -808126898, 'title': 'Test', 'type': 'group', 'all_members_are_administrators': True
+            }
+        }
+    },
+    {'update_id': 709831076, 'message': {'message_id': 16, 'from': {'id': 5119839971, 'is_bot': False, 'language_code': 'de', 'first_name': 'Maximilian'
+            }, 'text': 'Ich sehe die Nachrichten', 'date': 1674572097, 'chat': {'id': 5119839971, 'type': 'private', 'first_name': 'Maximilian'
+            }
+        }
+    }
+]

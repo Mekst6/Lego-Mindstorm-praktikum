@@ -1,0 +1,150 @@
+https://api.telegram.org/bot5972370199:AAHCkiDxIEVCnS_gbFQPPc3UHCz9haIzBiw/getupdates
+https://api.telegram.org/bot5972370199:AAHCkiDxIEVCnS_gbFQPPc3UHCz9haIzBiw/sendMessage?chat_id=-808126898&text=
+
+
+
+def listenForCommand():
+  if command is "/hello":
+    sendMessage("Hallo vom EV3")
+    ev3.speaker.beep()
+  if command is "/musik_1":
+    ev3.speaker.play_notes(["G4/4", "G4/4", "G4/8", "A4/8", "G4/8", "F4/8"], tempo=120)
+    ev3.speaker.play_notes(["E4/4", "E4/4", "E4/4"], tempo=120)
+    ev3.speaker.play_notes(["F4/4", "F4/4", "F4/8", "G4/8", "F4/8", "E4/8"], tempo=120)
+    ev3.speaker.play_notes(["D4/4", "D4/4", "D4/4"], tempo=120)
+    ev3.speaker.play_notes(["C4/4", "D4/4", "E4/4", "F4/4"], tempo=120)
+    ev3.speaker.play_notes(["G4/8", "A4/8", "G4/8", "A4/8", "F4/4"], tempo=120)
+
+
+def sendMessage(msg):
+  print("Text: "+ sendUrl + msg)
+  response = os.popen('curl ' + sendUrl + msg).read()
+  #os.system('curl ' + sendUrl + msg)
+  print("gesendet: " + response)
+
+# Write your program here.
+#ev3.speaker.beep()
+c = True
+url = "https://api.telegram.org/bot5972370199:AAHCkiDxIEVCnS_gbFQPPc3UHCz9haIzBiw/getupdates" 
+sendUrl = "https://api.telegram.org/bot5972370199:AAHCkiDxIEVCnS_gbFQPPc3UHCz9haIzBiw/sendMessage?chat_id=-808126898&text=" 
+#response = os.system("curl " + url)
+response = os.popen('curl ' + url).read()
+mydict = json.loads(response)
+count = len(mydict["result"])
+print(count)
+while count >= 1 and c == True:
+  count = count - 1
+  print(count)
+  command = mydict["result"][count]["message"]["text"]
+  print(command)
+  if command == "/hello":
+    c = False
+listenForCommand()
+
+
+
+
+# Create your objects here.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ev3.speaker.play_notes(["G4/4", "G4/4", "G4/8", "A4/8", "G4/8", "F4/8"], tempo=120)
+ev3.speaker.play_notes(["E4/4", "E4/4", "E4/4"], tempo=120)
+ev3.speaker.play_notes(["F4/4", "F4/4", "F4/8", "G4/8", "F4/8", "E4/8"], tempo=120)
+ev3.speaker.play_notes(["D4/4", "D4/4", "D4/4"], tempo=120)
+ev3.speaker.play_notes(["C4/4", "D4/4", "E4/4", "F4/4"], tempo=120)
+ev3.speaker.play_notes(["G4/8", "A4/8", "G4/8", "A4/8", "F4/4"], tempo=120)
+
+
+
+def listenForCommand():
+  if command is "/hello":
+    sendMessage("Hallo vom EV3")
+    ev3.speaker.beep()
+  if command is "/musik_1":
+    ev3.speaker.play_notes(["G4/4", "G4/4", "G4/8", "A4/8", "G4/8", "F4/8"], tempo=120)
+    ev3.speaker.play_notes(["E4/4", "E4/4", "E4/4"], tempo=120)
+    ev3.speaker.play_notes(["F4/4", "F4/4", "F4/8", "G4/8", "F4/8", "E4/8"], tempo=120)
+    ev3.speaker.play_notes(["D4/4", "D4/4", "D4/4"], tempo=120)
+    ev3.speaker.play_notes(["C4/4", "D4/4", "E4/4", "F4/4"], tempo=120)
+    ev3.speaker.play_notes(["G4/8", "A4/8", "G4/8", "A4/8", "F4/4"], tempo=120)
+
+
+def sendMessage(msg):
+  print("Text: "+ sendUrl + msg)
+  response = os.popen('curl ' + sendUrl + msg).read()
+  #os.system('curl ' + sendUrl + msg)
+  print("gesendet: " + response)
+
+# Write your program here.
+#ev3.speaker.beep()
+c = True
+url = "https://api.telegram.org/bot5972370199:AAHCkiDxIEVCnS_gbFQPPc3UHCz9haIzBiw/getupdates" 
+sendUrl = "https://api.telegram.org/bot5972370199:AAHCkiDxIEVCnS_gbFQPPc3UHCz9haIzBiw/sendMessage?chat_id=-808126898&text=" 
+#response = os.system("curl " + url)
+response = os.popen('curl ' + url).read()
+mydict = json.loads(response)
+count = len(mydict["result"])
+print(count)
+while count >= 1 and c == True:
+  count = count - 1
+  print(count)
+  command = mydict["result"][count]["message"]["text"]
+  print(command)
+  if command == "/hello":
+    c = False
+listenForCommand()
+
+
+
+
+# Create your objects here.
+
+
+putty instalieren
+
+verbinden 
+
+robot
+
+maker
+
+sudo apt-get update
+
+sudo apt-get upgrade
+
+curl
+
+wget (url)wav
+
+mv (name) (neuer Name)/ (Ordner/Neuer Name)
+
+cd (Ordner wechsel)
+
+cd .. (zurück)
+

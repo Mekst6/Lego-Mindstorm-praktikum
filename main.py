@@ -10,6 +10,7 @@ import os
 import json
 import time
 
+f = None
 
 ev3 = EV3Brick()
 d = True
@@ -42,8 +43,23 @@ def executeCommand(command):
     ev3.speaker.play_notes(["E4/4", "D4/4", "C4/4"], tempo=120)
   if command is "/doom":
     ev3.speaker.play_file("doom.wav")
+  if command is "/Good_Bye":
+    ev3.speaker.play_file("NS.wav")
+  if command is "/Spannung":
+    ev3.speaker.play_file("Spannung.wav")
   if command is "/dest":
-    ev3.speaker.play_file("dest2.wav")
+    ev3.speaker.play_file("Deepstone2.wav")
+  if command is "/As_It_Was":
+    ev3.speaker.play_file("As_It_Was.wav")
+  if command is "/say:":
+    Text_to_speak = os.popen('curl ' + url).read()
+    Speak = json.loads(Text_to_speak)
+    New_Text_to_speak = Speak["result"][-1]["message"]["message_id"]
+    words = New_Text_to_speak.split()
+    ev3.speaker.say(words)
+     
+   
+
 
 """ def sendMessage(msg):
   print("Text: "+ sendUrl + msg)
@@ -65,6 +81,7 @@ sendUrl = "https://api.telegram.org/bot5972370199:AAHCkiDxIEVCnS_gbFQPPc3UHCz9ha
 #response = os.system("curl " + url)
 LastCommandId = None
 while d == True:
+  ev3.speaker.set_volume(10000, which='_all_')
   response = os.popen('curl ' + url).read()
   mydict = json.loads(response)
   NewCommandId = mydict["result"][-1]["message"]["message_id"]
